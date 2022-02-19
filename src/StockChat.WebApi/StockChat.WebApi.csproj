@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\StockChat.Domain\StockChat.Domain.csproj" />
+    <ProjectReference Include="..\..\StockChat.Services\StockChat.Services.csproj" />
+    <ProjectReference Include="..\..\StockChat.SignalR\StockChat.SignalR.csproj" />
+  </ItemGroup>
+
+
+</Project>
