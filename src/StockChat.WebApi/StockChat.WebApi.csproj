@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\StockChat.Broker\StockChat.Broker.csproj" />
     <ProjectReference Include="..\..\StockChat.Domain\StockChat.Domain.csproj" />
     <ProjectReference Include="..\..\StockChat.ExternalServices\StockChat.ExternalServices.csproj" />
     <ProjectReference Include="..\..\StockChat.Mappings\StockChat.Mappings.csproj" />

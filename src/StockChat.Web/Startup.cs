@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using StockChat.Broker;
 using StockChat.SignalR.Hubs;
 
 namespace StockChat.Web
@@ -21,6 +22,7 @@ namespace StockChat.Web
             services.AddSignalR();
             services.AddControllers();
             services.AddRazorPages();
+            services.ConfigureMassTransit();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
