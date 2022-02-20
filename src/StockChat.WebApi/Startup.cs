@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using StockChat.ExternalServices;
+using StockChat.Mappings;
 using StockChat.Services;
 
 namespace StockChat.WebApi
@@ -20,6 +22,8 @@ namespace StockChat.WebApi
         {
             services.AddControllers();
             services.AddServices();
+            services.AddExternalServices();
+            services.ConfigureAutoMapper();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

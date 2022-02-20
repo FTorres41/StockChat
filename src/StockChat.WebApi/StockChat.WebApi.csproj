@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\StockChat.Domain\StockChat.Domain.csproj" />
+    <ProjectReference Include="..\..\StockChat.ExternalServices\StockChat.ExternalServices.csproj" />
+    <ProjectReference Include="..\..\StockChat.Mappings\StockChat.Mappings.csproj" />
     <ProjectReference Include="..\..\StockChat.Services\StockChat.Services.csproj" />
     <ProjectReference Include="..\..\StockChat.SignalR\StockChat.SignalR.csproj" />
   </ItemGroup>

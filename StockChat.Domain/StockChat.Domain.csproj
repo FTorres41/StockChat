@@ -8,4 +8,8 @@
     <Folder Include="Interfaces\Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="StooqApi" Version="1.1.1" />
+  </ItemGroup>
+
 </Project>
