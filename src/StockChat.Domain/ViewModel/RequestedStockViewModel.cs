@@ -2,6 +2,8 @@
 {
     public class RequestedStockViewModel
     {
+        public RequestedStockViewModel() { }
+
         public RequestedStockViewModel(string user, string stock, decimal value)
         {
             User = user;

@@ -2,6 +2,8 @@
 {
     public class ErrorViewModel
     {
+        public ErrorViewModel() { }
+
         public ErrorViewModel(string code, string message)
         {
             Code = code;
