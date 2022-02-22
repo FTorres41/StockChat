@@ -8,7 +8,7 @@ namespace StockChat.Mappings
         public static IServiceCollection ConfigureAutoMapper(this IServiceCollection services)
         {
             services.AddAutoMapper(cfg => {
-                cfg.AddProfile(new ExternalServiceToEntitiesProfile());
+                cfg.AddProfile(new ExternalServiceToDomainProfile());
                 cfg.AddProfile(new ViewModelToDomainProfile());
                 cfg.AddProfile(new DomainToViewModelProfile());
             });

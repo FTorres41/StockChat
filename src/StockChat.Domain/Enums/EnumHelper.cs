@@ -6,11 +6,11 @@ namespace StockChat.Domain.Enums
 {
     public static class EnumHelper
     {
-        public static string GetDescription(Enum enumerator)
+        public static string GetDescription<T>(T enumerator) where T : Enum
         { 
             try
             {
-                var enumType = typeof(Enum);
+                var enumType = typeof(T);
                 var memberInfos = enumType.GetMember(enumerator.ToString());
                 var enumValueMemberInfo = memberInfos.FirstOrDefault(m => m.DeclaringType == enumType);
                 var valueAttributes = enumValueMemberInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);

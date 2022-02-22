@@ -4,9 +4,9 @@ using StooqApi;
 
 namespace StockChat.Mappings.Profiles
 {
-    public class ExternalServiceToEntitiesProfile : Profile
+    public class ExternalServiceToDomainProfile : Profile
     {
-        public ExternalServiceToEntitiesProfile()
+        public ExternalServiceToDomainProfile()
         {
             CreateMap<Candle, DailyStock>();
         }
