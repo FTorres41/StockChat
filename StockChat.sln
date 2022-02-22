@@ -13,17 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Business", "1.Business", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.CrossCutting", "2.CrossCutting", "{AD053AE5-94C7-45E9-92A2-930341E46E75}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.SignalR", "StockChat.SignalR\StockChat.SignalR.csproj", "{004C1845-6D26-4E47-A060-BF35EC0FA1B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.SignalR", "src\StockChat.SignalR\StockChat.SignalR.csproj", "{004C1845-6D26-4E47-A060-BF35EC0FA1B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Services", "StockChat.Services\StockChat.Services.csproj", "{CA54DBB3-25DA-48FB-ACBD-8DC0D3CA5CC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Services", "src\StockChat.Services\StockChat.Services.csproj", "{CA54DBB3-25DA-48FB-ACBD-8DC0D3CA5CC7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Domain", "StockChat.Domain\StockChat.Domain.csproj", "{2F6EB1CF-A90A-4E1D-8C72-5FEFF37497CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Domain", "src\StockChat.Domain\StockChat.Domain.csproj", "{2F6EB1CF-A90A-4E1D-8C72-5FEFF37497CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.ExternalServices", "StockChat.ExternalServices\StockChat.ExternalServices.csproj", "{2476340C-7CDD-4662-B055-95B4FBE88ECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.ExternalServices", "src\StockChat.ExternalServices\StockChat.ExternalServices.csproj", "{2476340C-7CDD-4662-B055-95B4FBE88ECD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Mappings", "StockChat.Mappings\StockChat.Mappings.csproj", "{1D0FF240-E4E8-48C7-A471-F5AF0E54F4C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Mappings", "src\StockChat.Mappings\StockChat.Mappings.csproj", "{1D0FF240-E4E8-48C7-A471-F5AF0E54F4C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Broker", "StockChat.Broker\StockChat.Broker.csproj", "{B1C6A83D-0968-4583-81B4-A381B2580B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Broker", "src\StockChat.Broker\StockChat.Broker.csproj", "{B1C6A83D-0968-4583-81B4-A381B2580B9E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Test", "3.Test", "{129C3980-5D06-45E2-90E6-977E16C4B6DD}"
 EndProject

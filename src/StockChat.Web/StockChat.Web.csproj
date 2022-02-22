@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\StockChat.Broker\StockChat.Broker.csproj" />
-      <ProjectReference Include="..\..\StockChat.SignalR\StockChat.SignalR.csproj" />
+      <ProjectReference Include="..\StockChat.Broker\StockChat.Broker.csproj" />
+      <ProjectReference Include="..\StockChat.SignalR\StockChat.SignalR.csproj" />
     </ItemGroup>
 
     <ItemGroup>
