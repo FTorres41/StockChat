@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.ExternalServices"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Mappings", "StockChat.Mappings\StockChat.Mappings.csproj", "{1D0FF240-E4E8-48C7-A471-F5AF0E54F4C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Broker", "StockChat.Broker\StockChat.Broker.csproj", "{B1C6A83D-0968-4583-81B4-A381B2580B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Broker", "StockChat.Broker\StockChat.Broker.csproj", "{B1C6A83D-0968-4583-81B4-A381B2580B9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Test", "3.Test", "{129C3980-5D06-45E2-90E6-977E16C4B6DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,6 +9,8 @@ namespace StockChat.Mappings
         {
             services.AddAutoMapper(cfg => {
                 cfg.AddProfile(new ExternalServiceToEntitiesProfile());
+                cfg.AddProfile(new ViewModelToDomainProfile());
+                cfg.AddProfile(new DomainToViewModelProfile());
             });
 
             return services;

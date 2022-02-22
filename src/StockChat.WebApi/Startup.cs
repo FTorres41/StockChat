@@ -7,6 +7,7 @@ using StockChat.Broker;
 using StockChat.ExternalServices;
 using StockChat.Mappings;
 using StockChat.Services;
+using StockChat.SignalR.Hubs;
 
 namespace StockChat.WebApi
 {
@@ -21,6 +22,7 @@ namespace StockChat.WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSignalR();
             services.AddControllers();
             services.AddServices();
             services.AddExternalServices();
@@ -44,6 +46,7 @@ namespace StockChat.WebApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/chathub");
             });
         }
     }

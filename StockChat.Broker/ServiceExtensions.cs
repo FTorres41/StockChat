@@ -1,4 +1,5 @@
 ﻿using MassTransit;
+using MassTransit.MultiBus;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace StockChat.Broker
@@ -7,14 +8,15 @@ namespace StockChat.Broker
     {
         public static IServiceCollection ConfigureMassTransit(this IServiceCollection services)
         {
-            services.AddMassTransit(x =>
+            services.AddMassTransit<IStockChatBus>(x =>
             {
                 x.UsingInMemory((context, cfg) =>
                 {
-                    cfg.TransportConcurrencyLimit = 100;
+                    cfg.TransportConcurrencyLimit = 10;
                     cfg.ConfigureEndpoints(context);
                 });
             });
+            services.AddMassTransitHostedService();
 
             return services;
         }

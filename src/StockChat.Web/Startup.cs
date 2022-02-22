@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using StockChat.Broker;
-using StockChat.SignalR.Hubs;
 
 namespace StockChat.Web
 {
@@ -19,10 +17,8 @@ namespace StockChat.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSignalR();
             services.AddControllers();
             services.AddRazorPages();
-            services.ConfigureMassTransit();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -48,7 +44,6 @@ namespace StockChat.Web
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
-                endpoints.MapHub<ChatHub>("/chathub");
             });
         }
     }
